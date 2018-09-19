@@ -1,0 +1,372 @@
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica,sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../images/concrete_seamless.png");
+    }
+
+#spaceholder {
+    height: 20px;
+}
+    /* this is all the header stuff */
+#topbar {
+    width: 100%;
+    background: white;
+    height: 80px;
+    border-bottom: 3px solid #cccccc; 
+}
+#header {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    height: 40px;
+    width: 960px;
+    position: center;
+    margin: 0px auto 0px auto;
+    background: #ccc;
+}
+
+/* this is where my name is at the middle left of the header*/
+#jemall {
+    color: white;
+    float: left;
+    background-color: #4aaaa5;
+    padding: 0px 20px 0px 20px;
+    height: 80px;
+
+}
+
+/* hard time figuring out how to add these so added as unorderd list.  
+Next time try to use nav tag*/
+
+#navlinks {
+    color: #777777;
+    background-color: white;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica,sans-serif;
+    font-size: 20px;
+    text-align: right;
+    padding: 10px 20px;
+    height: 60px;
+    margin-top: 0px;
+}
+
+div ul li {
+    float: right;
+    padding-right: 10px;
+    list-style-type: none;
+}
+
+.lineleft { 
+    border-left:solid 2px #777777;
+    padding-left: 10px;
+}
+
+/* modified navigation links to have different behavior based on state*/
+/* unvisited link */
+a:link {
+    clear: both;
+    color: #777777;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #777777;
+}
+
+/* moused over link */
+a:hover {
+    color: blue;
+    background-color: lightblue;
+    text-decoration: none;
+}
+
+/* this is the line between the nav links */
+.sides {
+    border-left: 5px solid grey;
+    border-right: 1px solid grey;
+}
+
+
+/* this is the area for my main content */
+#wrapper {
+    text-align: justify;
+    padding-right: 10px;
+    clear: both;
+    background: #ffffff;
+    margin: 20px auto auto auto;
+    width: 954px;
+    height: 500px;
+    padding-bottom: 20px;
+    border: 3px solid #dddddd;
+
+}
+
+/* about me header */
+#wrapper h2 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #cccccc;
+}
+
+.marginleft {
+    text-align: justify;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+/* font color for paragraphs */
+p {
+    color: #777777;
+}
+
+.floatImgLeft {
+    float: left;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    padding: 0px 20px 0px 0px;
+    }
+
+.pictext {
+    height: 200px;
+    width: 80%;
+    padding: 0px 20px 0px 0px;  
+}
+
+/* this is the CSS specific to the contact form area */
+
+#contact {
+    padding: 0px 20px;
+    color: #777777;
+}
+
+#message {
+    width: 910px; 
+    height: 190px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+
+#name {
+    width: 910px; 
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+
+#email {
+    width: 910px; 
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+
+.contactbutton {
+    background-color: #4aaaa5; 
+    color: white; 
+    width: 80px; 
+    height: 30px;
+}
+
+/* portfolio additions */
+
+/* this is the CSS area for my portfolio content */
+#p_wrapper {
+    clear: both;
+    background: #ffffff;
+    margin: 20px auto auto auto;
+    width: 950px;
+    height: 760px;
+    padding-bottom: 20px;
+    border: 3px solid #dddddd;
+
+}
+
+/* portfolio box header */
+#p_wrapper h2 {
+    clear: both;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #cccccc;
+}
+
+#portfolioleft {
+    float: left;
+    width: 280px;
+    height: 670px;
+    margin-left: 25px;
+    top: 10px;
+
+}
+
+div.imgspace {
+    position: relative;
+    height: 220px;
+    
+}
+
+.banner1 {
+    position: absolute;
+    color: white;
+    background-color: #4aaaa5;
+    text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 50px;
+    left: 0px;
+    width: 280px;
+    top: 110px; 
+}
+
+#spaceholder_2 {
+    height: 200px;
+}
+
+/* all footer stuff here */
+
+footer {
+    clear: both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #666666;
+    text-align: center;
+    border-top: 10px solid #4aaaa5;    
+}
+
+/* On screens that are 980px or less, set the background color to blue */
+@media screen and (max-width: 980px) {
+
+    #header {
+        width: auto;
+    }
+
+    #wrapper {
+        width: auto;
+    }
+
+    #p_wrapper {
+        width: auto;
+    }
+
+    #portfolioleft {
+        width: auto;
+    }
+
+    #contact {
+        width: auto;
+    }
+
+    #message {
+        width: auto; 
+    }
+    
+    #name {
+        width: auto; 
+
+    }
+    
+    #email {
+        width: auto; 
+
+    }
+
+  }
+  
+  /* On screens that are 768px or less, set the background color to olive */
+  @media screen and (max-width: 768px) {
+   
+    #header {
+        width: auto;
+    }
+
+  #wrapper {
+    width: auto;
+    height: auto;
+
+    }
+
+    #p_wrapper {
+        width: auto;
+    }
+
+    #portfolioleft {
+        width: auto;
+    }
+    
+    #contact {
+        width: auto;
+    }
+
+    #message {
+        width: auto; 
+    }
+    
+    #name {
+        width: auto; 
+
+    }
+    
+    #email {
+        width: auto; 
+    }
+
+}
+
+  /* On screens that are 640px or less, set the background color to olive */
+  @media screen and (max-width: 640px) {
+    body {
+        background-image: none;
+    }
+    #header {
+        width: auto;
+        height: auto;
+
+    }
+    #jemall {
+        width: auto;
+    }
+
+    #navlinks {
+        float: left;
+        position: relative;
+    }
+
+    #wrapper {
+        width: auto;
+        height: auto;
+
+    }
+
+    #p_wrapper {
+        width: auto;
+    }
+
+    #portfolioleft {
+        width: auto;
+    }
+
+    #contact {
+        width: auto;
+    }
+
+    #message {
+        width: auto; 
+    }
+    
+    #name {
+        width: auto; 
+
+    }
+    
+    #email {
+        width: auto; 
+
+    }
+  }
